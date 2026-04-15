@@ -1,0 +1,1 @@
+const isMultiplayer=false;localStorage.clear();console.log('Solo mode');

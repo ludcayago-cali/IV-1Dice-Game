@@ -1,0 +1,1 @@
+.cell{width:calc(var(--tile-size) - 1px);height:calc(var(--tile-size) - 1px);} 

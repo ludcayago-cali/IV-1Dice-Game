@@ -78,7 +78,6 @@ body { display:flex; justify-content:center; align-items:stretch; padding:6px; }
   background: radial-gradient(circle at center, rgba(120, 206, 255, 0.55) 0 28%, rgba(120, 206, 255, 0.18) 29%, rgba(120, 206, 255, 0) 60%);
 }
 .layer.actor { z-index:5; transform:scale(.88); will-change:transform; background-size:contain; background-repeat:no-repeat; }
-.layer.actor.slide-in { animation:actorSlideIn 220ms cubic-bezier(0.22,1,0.36,1); }
 @keyframes actorSlideIn { from { transform:translate(var(--from-x,0), var(--from-y,0)) scale(.88);} to { transform:translate(0,0) scale(.88);} }
 
 .bottom-panel { border-radius:20px; background:linear-gradient(180deg, rgba(135,84,37,.95), rgba(81,45,21,.96)); border:2px solid rgba(230,179,118,.18); padding:8px; display:grid; gap:8px; }

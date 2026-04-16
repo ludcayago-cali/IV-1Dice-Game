@@ -186,17 +186,26 @@ body {
 .layer.ground { z-index: 1; }
 
 .layer.block {
+  position: absolute;
   z-index: 4;
   pointer-events: none;
+
   left: 50%;
-  bottom: 0;
-  inset: auto;
+  top: 50%;
+
   width: var(--block-width, 115%);
   height: var(--block-height, 125%);
-  transform: translateX(-50%) translateY(var(--block-y, 0px)) scale(var(--block-scale, 1));
-  transform-origin: center bottom;
+
+  transform:
+    translate(-50%, -50%)
+    translateY(12%) /* grounding offset */
+    translateY(var(--block-y, 0px))
+    scale(var(--block-scale, 1));
+
+  transform-origin: center center;
+
   background-size: contain;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

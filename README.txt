@@ -1,4 +1,5 @@
-Patched to remove extra CSS animations and keep only GIF-driven states.
-- Removed slide-in / idle-pulse / attack-pop CSS behavior
-- Simplified .layer.actor styling
-- Kept game logic and GIF state system
+Patched from your uploaded game(3).js and style(1).css.
+Fixes:
+- Player 1 is always appended to the board tile again
+- safer getPlayer1Sprite() fallback for invalid anim/facing state
+- style.css preserved from your upload

@@ -1,13 +1,14 @@
-MANUAL PATH PLANNING + AUTO EXECUTE
+Patched from your uploaded game(2).js.
 
-Files:
-- index.html
-- style.css
+Included:
 - game.js
+- style_patch.css
 
-What changed:
-- player now plans the path tile by tile
-- character does NOT move during planning
-- once all steps are planned, movement auto-executes immediately
-- no confirm button added
-- existing 8x8 board, mixed assets, safe random blockers/spawns preserved
+Changes:
+- orc assets replaced with golem assets
+- idle / walk / hit / die / dead logic for Player 1
+- facing based on enemy position
+- movement uses golemrun
+- if Player 1 wins: idle pause -> hit -> idle until next round
+- if Player 1 loses: die -> dead until next round
+- mobile-game-feel actor CSS patch

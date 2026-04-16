@@ -1,5 +1,6 @@
-Patched from your uploaded game(3).js and style(1).css.
-Fixes:
-- Player 1 is always appended to the board tile again
-- safer getPlayer1Sprite() fallback for invalid anim/facing state
-- style.css preserved from your upload
+Patched from your last working files.
+- Player 1 now uses golem assets instead of orcs
+- Facing is based on enemy location
+- idle / walk / hit / die / dead states added for Player 1
+- dashing, floating, and CSS attack effects removed
+- index.html preserved from your last working file

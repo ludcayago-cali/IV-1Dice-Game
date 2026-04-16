@@ -299,11 +299,11 @@ function renderTileEngine() {
           const prev = state.prevPositions[1];
           actor.style.setProperty("--from-x", `${(prev.col - col) * 100}%`);
           actor.style.setProperty("--from-y", `${(prev.row - row) * 100}%`);
-          actor.classList.add("slide-in");
+         
         } else if (state.anim[1] === "idle") {
-          actor.classList.add("idle-pulse");
+        
         }
-        if (state.anim[1] === "hit") actor.classList.add("attack-pop");
+        if (state.anim[1] === "hit")
         cell.appendChild(actor);
       }
 
@@ -315,9 +315,9 @@ function renderTileEngine() {
           const prev = state.prevPositions[2];
           actor.style.setProperty("--from-x", `${(prev.col - col) * 100}%`);
           actor.style.setProperty("--from-y", `${(prev.row - row) * 100}%`);
-          actor.classList.add("slide-in");
+        
         } else {
-          actor.classList.add("idle-pulse");
+          
         }
         cell.appendChild(actor);
       }
